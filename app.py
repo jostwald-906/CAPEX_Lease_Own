@@ -270,7 +270,12 @@ with tab4:
 # ---------------------------
 # Display Input Controls in an Expander Below
 # ---------------------------
-st.header("Input Parameters (Click to Expand and Modify)")
+st.title("Leasing vs. Owning Cost Analysis")
+st.markdown(
+    "This tool compares the financial impact of owning a facility versus leasing it. "
+    "For each parameter, you can adjust the value using the slider or by entering a number directly."
+)
+st.header("Input Parameters")
 with st.expander("Show/Modify Inputs", expanded=True):
     capex_m = dual_input(
         "New-build CAPEX ($M)", 50.0, 1000.0, default_values["CAPEX"], 1.0, key="CAPEX",
