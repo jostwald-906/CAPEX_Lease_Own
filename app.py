@@ -193,6 +193,11 @@ df["Cumulative Leasing"] = df["Leasing Cash Flow"].cumsum()
 # ---------------------------
 # Display Outputs (Tabs) at the Top
 # ---------------------------
+st.title("Leasing vs. Owning Cost Analysis")
+st.markdown(
+    "This tool compares the financial impact of owning a facility versus leasing it. "
+    "For each parameter, you can adjust the value using the slider or by entering a number directly."
+)
 st.header("Output Results")
 tab0, tab1, tab2, tab3, tab4 = st.tabs([
     "Approach & Assumptions", 
@@ -270,11 +275,7 @@ with tab4:
 # ---------------------------
 # Display Input Controls in an Expander Below
 # ---------------------------
-st.title("Leasing vs. Owning Cost Analysis")
-st.markdown(
-    "This tool compares the financial impact of owning a facility versus leasing it. "
-    "For each parameter, you can adjust the value using the slider or by entering a number directly."
-)
+
 st.header("Input Parameters")
 with st.expander("Show/Modify Inputs", expanded=True):
     capex_m = dual_input(
