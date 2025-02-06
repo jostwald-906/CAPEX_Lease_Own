@@ -279,7 +279,7 @@ with tab4:
 st.header("Input Parameters")
 with st.expander("Show/Modify Inputs", expanded=True):
     capex_m = dual_input(
-        "New-build CAPEX ($M)", 50.0, 1000.0, default_values["CAPEX"], 1.0, key="CAPEX",
+        "New-build CAPEX ($M)", 50.0, 3000.0, default_values["CAPEX"], 1.0, key="CAPEX",
         help_text="The total cost (in millions) to build the facility. This is the upfront capital expenditure for ownership."
     )
     salvage_m = dual_input(
