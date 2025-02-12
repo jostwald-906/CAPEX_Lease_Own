@@ -287,7 +287,7 @@ with st.expander("Show/Modify Inputs", expanded=True):
         help_text="The estimated residual value (in millions) recoverable at the end of the analysis period."
     )
     op_cost_m = dual_input(
-        "Initial Operating Cost ($M)", 1.0, 100.0, default_values["op_cost"], 1.0, key="op_cost",
+        "Initial Operating Cost ($M)", 1.0, 500.0, default_values["op_cost"], 1.0, key="op_cost",
         help_text="The first-year operating cost (in millions) covering maintenance, utilities, etc."
     )
     debt_ratio = dual_input(
@@ -311,7 +311,7 @@ with st.expander("Show/Modify Inputs", expanded=True):
         help_text="The corporate tax rate (in percent) used to calculate tax shields."
     )
     lease_payment_m = dual_input(
-        "Initial Lease Payment ($M)", 1.0, 100.0, default_values["lease_payment"], 1.0, key="lease_payment",
+        "Initial Lease Payment ($M)", 1.0, 500.0, default_values["lease_payment"], 1.0, key="lease_payment",
         help_text="The annual lease payment (in millions) if the facility is leased."
     )
     lease_escalation_pct = dual_input(
